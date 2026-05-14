@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;LankaConnects - Sri Lankans in UAE&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root { --maroon: #8D153A; --gold: #F5A623; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body { font-family: 'Poppins', sans-serif; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-content { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab-content.active { display: block; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(141 21 58 / 0.15); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-gray-50"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- NAVBAR --&gt;</p>
+<p class="p1">&lt;nav class="bg-white shadow-md sticky top-0 z-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="text-4xl"&gt;🇱🇰&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="text-3xl font-bold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="text-[#8D153A]"&gt;Lanka&lt;/span&gt;&lt;span class="text-[#F5A623]"&gt;Connects&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flex gap-2 md:gap-6 text-sm font-medium overflow-x-auto pb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="switchTab(0)" class="tab-btn active px-4 py-2"&gt;Home&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="switchTab(1)" class="tab-btn px-4 py-2"&gt;Jobs&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="switchTab(2)" class="tab-btn px-4 py-2"&gt;Businesses&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="switchTab(3)" class="tab-btn px-4 py-2"&gt;Events&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="switchTab(4)" class="tab-btn px-4 py-2"&gt;Classifieds&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="switchTab(5)" class="tab-btn px-4 py-2"&gt;Professionals&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="switchTab(6)" class="px-5 py-2 border border-[#8D153A] text-[#8D153A] rounded-2xl hover:bg-[#8D153A] hover:text-white"&gt;Dashboard&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="showPostModal()" class="px-6 py-2 bg-[#8D153A] text-white rounded-2xl font-semibold flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fas fa-plus"&gt;&lt;/i&gt; Post</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- ==================== ALL PAGES ==================== --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HOME --&gt;</p>
+<p class="p1">&lt;div id="tab-0" class="tab-content active max-w-7xl mx-auto px-6 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="bg-gradient-to-r from-[#8D153A] to-black text-white rounded-3xl py-20 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="text-5xl md:text-6xl font-bold mb-4"&gt;Welcome Home, Sri Lankans in UAE&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="text-xl"&gt;Your Community Hub for Jobs, Business &amp; Connections&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid grid-cols-2 md:grid-cols-6 gap-6 mt-10 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl shadow"&gt;&lt;div class="text-4xl font-bold text-maroon"&gt;350K+&lt;/div&gt;&lt;div&gt;Members&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl shadow"&gt;&lt;div class="text-4xl font-bold text-maroon"&gt;1.2K&lt;/div&gt;&lt;div&gt;Jobs&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl shadow"&gt;&lt;div class="text-4xl font-bold text-maroon"&gt;480&lt;/div&gt;&lt;div&gt;Businesses&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl shadow"&gt;&lt;div class="text-4xl font-bold text-maroon"&gt;89&lt;/div&gt;&lt;div&gt;Events&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl shadow"&gt;&lt;div class="text-4xl font-bold text-maroon"&gt;2.4K&lt;/div&gt;&lt;div&gt;Classifieds&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl shadow"&gt;&lt;div class="text-4xl font-bold text-maroon"&gt;1.8K&lt;/div&gt;&lt;div&gt;Professionals&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- JOBS --&gt;</p>
+<p class="p1">&lt;div id="tab-1" class="tab-content max-w-7xl mx-auto px-6 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="text-4xl font-bold mb-8"&gt;Jobs in UAE&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid md:grid-cols-3 gap-6" id="jobs-grid"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- BUSINESSES --&gt;</p>
+<p class="p1">&lt;div id="tab-2" class="tab-content max-w-7xl mx-auto px-6 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="text-4xl font-bold mb-8"&gt;Sri Lankan Businesses&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid md:grid-cols-3 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;🍛 Colombo Taste Restaurant - Karama&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;🛒 Lanka Fresh Mart - Al Quoz&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;💆 Serendib Beauty Lounge - Abu Dhabi&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- EVENTS --&gt;</p>
+<p class="p1">&lt;div id="tab-3" class="tab-content max-w-7xl mx-auto px-6 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="text-4xl font-bold mb-8"&gt;Upcoming Events&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid md:grid-cols-3 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;🎊 Poson Festival - 21 Jun - Dubai&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;💼 Professionals Networking - 28 Jun&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;🏏 Lanka Cricket Tournament - 5 Jul&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CLASSIFIEDS --&gt;</p>
+<p class="p1">&lt;div id="tab-4" class="tab-content max-w-7xl mx-auto px-6 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="text-4xl font-bold mb-8"&gt;Classifieds&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid md:grid-cols-3 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;📱 iPhone 14 Pro - Excellent Condition&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;🏠 Room for Rent in Sharjah&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;🚗 Toyota Camry for Sale&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- PROFESSIONALS --&gt;</p>
+<p class="p1">&lt;div id="tab-5" class="tab-content max-w-7xl mx-auto px-6 py-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="text-4xl font-bold mb-8"&gt;Professionals &amp; Freelancers&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid md:grid-cols-3 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;👨‍💼 Senior Accountant - Available&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;👩‍🍳 Experienced Chef&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;🧑‍💻 Full Stack Developer&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- DASHBOARD --&gt;</p>
+<p class="p1">&lt;div id="tab-6" class="tab-content max-w-7xl mx-auto px-6 py-8 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="text-4xl font-bold mb-8"&gt;My Dashboard&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid grid-cols-2 md:grid-cols-4 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-gray-50 p-8 rounded-3xl text-center"&gt;Applications&lt;br&gt;&lt;span class="text-5xl font-bold"&gt;12&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-gray-50 p-8 rounded-3xl text-center"&gt;Posted Items&lt;br&gt;&lt;span class="text-5xl font-bold"&gt;8&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-gray-50 p-8 rounded-3xl text-center"&gt;Saved&lt;br&gt;&lt;span class="text-5xl font-bold"&gt;31&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-gray-50 p-8 rounded-3xl text-center"&gt;Messages&lt;br&gt;&lt;span class="text-5xl font-bold"&gt;7&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- POST MODAL --&gt;</p>
+<p class="p1">&lt;div id="postModal" class="fixed inset-0 bg-black/70 hidden flex items-center justify-center z-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="bg-white rounded-3xl p-8 max-w-md w-full mx-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3 class="text-2xl font-bold text-center mb-6"&gt;What do you want to post?&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid grid-cols-2 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="alert('Job Posting Form - Ready to integrate full stepper')" class="p-6 border-2 border-[#8D153A] rounded-3xl hover:bg-[#8D153A] hover:text-white"&gt;💼 Job&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="alert('Classified Posting - Ready')" class="p-6 border-2 border-[#8D153A] rounded-3xl hover:bg-[#8D153A] hover:text-white"&gt;📦 Classified&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="alert('Event Creation - Ready')" class="p-6 border-2 border-[#8D153A] rounded-3xl hover:bg-[#8D153A] hover:text-white"&gt;🎉 Event&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="alert('Business Listing - Ready')" class="p-6 border-2 border-[#8D153A] rounded-3xl hover:bg-[#8D153A] hover:text-white"&gt;🏪 Business&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="hidePostModal()" class="mt-8 w-full py-4 text-gray-500"&gt;Close&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer class="bg-[#1a1a2e] text-gray-400 py-12 text-center mt-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>© 2026 LankaConnects • Connecting Sri Lankans in the UAE</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function switchTab(n) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-content').forEach(tab =&gt; tab.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('tab-' + n).classList.add('active');</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-btn').forEach(btn =&gt; btn.classList.remove('active', 'text-[#8D153A]', 'font-semibold'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-btn')[n].classList.add('active', 'text-[#8D153A]', 'font-semibold');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Sample Jobs</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const jobs = [</p>
+<p class="p1"><span class="Apple-converted-space">    </span>{title:"Full Stack Developer", company:"Careem", salary:"18k-26k", location:"Dubai"},</p>
+<p class="p1"><span class="Apple-converted-space">    </span>{title:"Senior Accountant", company:"Emirates NBD", salary:"12k-18k", location:"Abu Dhabi"},</p>
+<p class="p1"><span class="Apple-converted-space">    </span>{title:"Heavy Driver", company:"Al Futtaim", salary:"5.5k+", location:"Sharjah"}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function renderJobs() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const container = document.getElementById('jobs-grid');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>container.innerHTML = jobs.map(j =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="bg-white p-6 rounded-3xl card-hover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="font-semibold text-xl"&gt;${j.title}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-[#8D153A]"&gt;${j.company}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="mt-3"&gt;${j.salary} • ${j.location}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="alert('Applied successfully! 🎉')" class="mt-6 w-full bg-[#8D153A] text-white py-3 rounded-2xl"&gt;Apply Now&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`).join('');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function showPostModal() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('postModal').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function hidePostModal() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('postModal').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Initialize</p>
+<p class="p1"><span class="Apple-converted-space">  </span>window.onload = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>renderJobs();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>switchTab(0);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>};</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
